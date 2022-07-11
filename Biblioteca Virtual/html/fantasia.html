@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria IFPE</title>
+    <link rel="stylesheet" href="../css/fantasia.css">
+    <link rel="shortcut icon" href="../img/faviconl.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JQuery para carregar o footer e o header automaticamente -->
+    <script>
+        $(function(){
+            $(".header").load("header2.html");
+            $(".footer").load("footer2.html");
+        });
+    </script>
+
+</head>
+<body>
+    <div class="header"></div>
+    <h1 id="bemVindo">Livros em destaque</h1>
+    <h2 id="navegacao">Navegação</h2>
+    <div class="container">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="comedia.html">Comédia</a></li>
+            <li><a href="terror.html">Terror</a></li>
+            <li><a href="suspense.html">Suspense</a></li>
+            <li><a href="fantasia.html">Fantasia</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <main>
+            <div id="slider">
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <div id="slides">
+                 <div id="carossel">
+                    <div class="inner">
+                       <div class="slide slide_1">
+                          <div class="slide-content">
+                             <img src="https://images-na.ssl-images-amazon.com/images/I/61jgm6ooXzL.jpg" alt="">
+                          </div>
+                       </div>
+                       <div class="slide slide_2">
+                          <div class="slide-content">
+                            <img src="https://lojasaraiva.vteximg.com.br/arquivos/ids/12104831/1006786396.jpg?v=637142231647830000" alt="">
+        
+                          </div>
+                       </div>
+                       <div class="slide slide_3">
+                          <div class="slide-content">
+        
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71ODY-tWNIL.jpg" alt="">
+                             <p></p>
+                          </div>
+                       </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div id="controls">
+                 <label for="slide1"></label>
+                 <label for="slide2"></label>
+                 <label for="slide3"></label>
+              </div>
+              <div id="bullets">
+                 <label for="slide1"></label>
+                 <label for="slide2"></label>
+                 <label for="slide3"></label>
+              </div>
+           </div>
+           <div class="conteudos">
+            <div class="texto1">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p>
+               </p>
+            </div>
+           </div>
+          </main>
+    </div>
+    <div class="footer"></div>
+</body>

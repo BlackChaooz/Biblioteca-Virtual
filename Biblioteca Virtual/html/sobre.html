@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria IFPE</title>
+    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="shortcut icon" href="../img/faviconl.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JQuery para carregar o footer e o header automaticamente -->
+    <script>
+        $(function(){
+            $(".header").load("header2.html");
+            $(".footer").load("footer2.html");
+        });
+    </script>
+
+</head>
+<body>
+    <div class="header"></div>
+    <h1 id="bemVindo">Nossa instituição tem o intuito de levar o hábito da leitura para os jovens através de pequenas ações. Estamos localizados no endereço abaixo: </h1>
+    <h2 id="navegacao">Navegação</h2>
+    <div class="container">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="comedia.html">Comédia</a></li>
+            <li><a href="terror.html">Terror</a></li>
+            <li><a href="suspense.html">Suspense</a></li>
+            <li><a href="fantasia.html">Fantasia</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5150564463524!2d-34.86101878584383!3d-7.945605881350573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3dbf4a9cd5f1%3A0x45bf1641ad29a799!2sIFPE-%20Intituto%20Federal%20De%20Pernambuco%20%2C%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1642714986008!5m2!1spt-BR!2sbr" width="522px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="footer"></div>
+</body>

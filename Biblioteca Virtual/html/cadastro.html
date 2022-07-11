@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria IFPE</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="shortcut icon" href="../img/faviconl.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JQuery para carregar o footer e o header automaticamente -->
+    <script>
+        $(function(){
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+    </script>
+
+
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="logo">
+            <img src="../img/livro.png" alt="Livro aberto" id="logoLivro">
+            <h1 id="nomeLogo">Livraria IFPE</h1>
+        </div>
+        
+        <div>
+            <form class="CadastroForm" onsubmit="validarDados()">
+                <div class="UsuarioInput">
+                    <label>Nome do Usuário:</label>
+                   <input type="text" placeholder="EX:Marcelo Antônio" class="validaNome">
+                </div>
+
+                <div class="UsuarioInput" id="espaco">
+                    <label>Digite seu e-mail:</label>
+                    <input type="email" placeholder="Ex:exemplo@email.com" id="inputEmail" class="validaEmail">
+                </div>
+
+                <div class="UsuarioInput" id="espaco">
+                    <label>CPF:</label>
+                    <input type="text" placeholder="Ex:xxx.xxx.xxx-xx" id="inputCpf" maxlength="14" class="validaCpf">
+                </div>
+
+                <div class="UsuarioInput" id="espaco">
+                    <label>CEP:</label>
+                    <input type="text" placeholder="Ex:xx.xxx-xxx" id="inputCep" maxlength="10" class="validaCep">
+                </div>
+
+                <div class="senhaInput">
+                    <label>Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" class="validaSenha">
+                </div>
+
+    
+                <div class="senhaInput">
+                    <label>Confirme sua Senha:</label>
+                    <input type="password" placeholder="Confirme sua senha" class="validaConSenha">
+                </div>
+
+                <div class="botao">
+                    <input type="button" name="bt" value="Cadastrar"
+                    onclick="redirecionarLogin()">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../JS/funcoes.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria IFPE</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../img/faviconl.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JQuery para carregar o footer e o header automaticamente -->
+    <script>
+        $(function(){
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+    </script>
+
+</head>
+<body>
+    <div class="header"></div>
+
+    <!-- Página de Login Começa aqui -->
+    <div class="main">
+        <div class="logo">
+            <img src="../img/livro.png" alt="Livro aberto" id="logoLivro">
+            <h1 id="nomeLogo">Livraria IFPE</h1>
+        </div>
+        
+        <div>
+            <form class="loginForm">
+                <div class="loginInput">
+                    <label>Login:</label>
+                    <input type="email" placeholder="exemplo@email.com">
+                </div>
+    
+                <div class="senhaInput">
+                    <label>Senha:</label>
+                    <input type="password" placeholder="Digite sua senha">
+                </div>
+
+                <div class="botao">
+                    <input id="botao1" type="button" name="bt" value="Login" onclick="redirecionar()">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+
+    <div class="footer"></div>
+    <script src="../JS/funcoes.js"></script>
+</body>
+</html>

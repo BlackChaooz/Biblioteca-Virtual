@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Import da fonte Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Configs Globais */
+*{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .logo{
+    margin-top: 25px;
+}
+
+.main img#logoLivro{
+    position: relative;
+    width: 152px;
+    height: 152px;
+}
+
+.main h1#nomeLogo{
+    text-align: center;
+}
+
+/* Inputs */
+
+.main .loginForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .loginForm .loginInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .loginForm .loginInput input{
+    width: 250px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+
+.main .loginForm .senhaInput {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px;
+}
+
+.main .loginForm .senhaInput input{
+    width: 250px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+
+.main .loginForm .botao input{
+    position: relative;
+    margin-top: 12px;
+    width: 150px;
+    height: 32px;
+    border: 0;
+    background-color: #036b05;
+    color: white;
+}
+
+.main .loginForm button:hover{
+    background-color: #16a519;
+    transition-duration: 0.5s;
+}
+
+
+

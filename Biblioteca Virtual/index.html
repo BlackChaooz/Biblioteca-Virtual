@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria IFPE</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="shortcut icon" href="./img/faviconl.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JQuery para carregar o footer e o header automaticamente -->
+    <script>
+        $(function () {
+            $(".header").load("html/header.html");
+            $(".footer").load("html/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class ="janela">
+        <div class="header"></div>
+        <h1 id="bemVindo">Seja bem vindo a Livraria IFPE</h1>
+        <h2 id="navegacao">Navegação</h2>
+        <div class="container">
+        
+            <ul>
+                <li><a class="active" href="../Index.html">Home</a></li>
+                <li><a href="./html/romance.html">Romance</a></li>
+                <li><a href="./html/comedia.html">Comédia</a></li>
+                <li><a href="./html/terror.html">Terror</a></li>
+                <li><a href="./html/suspense.html">Suspense</a></li>
+                <li><a href="./html/fantasia.html">Fantasia</a></li>
+                <li><a href="./html/sobre.html">Sobre</a></li>
+            </ul>
+        
+            <main>
+        
+                <div id="slider">
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                  <input type="radio" name="slider" id="slide1" checked>
+                  <input type="radio" name="slider" id="slide2">
+                  <input type="radio" name="slider" id="slide3">
+                  <div id="slides">
+                     <div id="carossel">
+                        <div class="inner">
+                           <div class="slide slide_1">
+                              <div class="slide-content">
+                                  <a href="https://www.amazon.com.br/Caixa-Harry-Potter-Edi%C3%A7%C3%A3o-Premium/dp/8532505708/ref=sr_1_1?keywords=box+harry+potter&qid=1642718773&s=books&sprefix=box+%2Cstripbooks%2C185&sr=1-1&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12" target="_blank" rel="noopener noreferrer">
+                                   <img src="./img/boxharry.jpg" alt="">
+                                  </a>
+                              </div>
+                           </div>
+                           <div class="slide slide_2">
+                              <div class="slide-content">
+                                  <a href="https://www.amazon.com.br/Box-Percy-Jackson-os-Olimpianos/dp/8580574625/ref=pd_bxgy_img_2/136-3589718-8277365?pd_rd_w=xACRQ&pf_rd_p=4a943320-02ab-4775-ad7a-eaf57d00a244&pf_rd_r=3RFDQFH3BY30MHWV4ZQD&pd_rd_r=00137ebd-b34c-43a0-812e-effcc7c68ec9&pd_rd_wg=2yUJe&pd_rd_i=8580574625&psc=1" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/boxpercy.jpg" alt="">
+                                </a>        
+                              </div>
+                           </div>
+                           <div class="slide slide_3">
+                              <div class="slide-content">
+                                  <a href="https://www.amazon.com.br/Os-Her%C3%B3is-do-Olimpo-Box/dp/8580579503/ref=pd_bxgy_img_1/136-3589718-8277365?pd_rd_w=2AYQC&pf_rd_p=4a943320-02ab-4775-ad7a-eaf57d00a244&pf_rd_r=PK1E2WJMTQDGRYAG5FTG&pd_rd_r=0d167af5-5c9c-4735-8118-cef1b0dfe0ac&pd_rd_wg=piBDU&pd_rd_i=8580579503&psc=1" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/boxpercyherois.jpg" alt="">
+                                </a>
+                                 <p></p>
+                              </div>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="controls">
+                     <label for="slide1"></label>
+                     <label for="slide2"></label>
+                     <label for="slide3"></label>
+                  </div>
+                  <div id="bullets">
+                     <label for="slide1"></label>
+                     <label for="slide2"></label>
+                     <label for="slide3"></label>
+                  </div>
+               </div>
+               <div class="conteudos">
+                <div class="texto1">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <p>
+                   </p>
+                </div>
+               </div>
+        
+              </main>
+              <table>
+                <caption>Populares nas ultimas semanas</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Livros</th>
+                    <th scope="col">Data de puplicação</th>
+                    <th scope="col">Preço estimado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Livros">A Dakimakura Flutuante</td>
+                    <td data-label="Data de publicação">09/06/2017</td>
+                    <td data-label="Preço estimado">R$9,50</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Livros">Harry Potter e a Pedra Filosofal</td>
+                    <td data-label="Data de publicação">26/06/1997</td>
+                    <td data-label="Preço estimado">R$25,90</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Livros">Percy Jacson e o ladrão de raios</td>
+                    <td data-label="Data de puplicação">08/06/2005</td>
+                    <td data-label="Preço estimado">R$30,90</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Livros">O herói perdido</td>
+                    <td data-label="Data de puplicação">12/10/2010</td>
+                    <td data-label="Preço estimado">R$28,90</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <br>
+        
+        </div>
+        
+          <div class="footer"></div>
+    </div>
+</body>
+
+</html>
